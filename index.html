@@ -28,7 +28,27 @@
   </head>
   <body class="body dev">
     <header class="header">
-      <div class="header__wrap"><a class="header__logo" href="#"><img class="lazyload header__img" src="assets/img/header__logo.svg" alt="header__logo"></a>
+      <div class="header__wrap">
+        <div class="header__left"><a class="header__logo" href="#"><img class="lazyload header__img" src="assets/img/header__logo.svg" alt="header__logo"></a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item"> <a class="header__link" href="#">Сайты</a></li>
+              <li class="header__item"><a class="header__link" href="#">Разработка</a></li>
+              <li class="header__item"><a class="header__link" href="#">Иаркетинг</a></li>
+              <li class="header__item"><a class="header__link" href="#">SEO</a></li>
+              <li class="header__item"><a class="header__link" href="#">Приложения</a></li>
+              <li class="header__item"><a class="header__link" href="#">Брендинг</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__right">
+          <ul class="header__info">
+            <li class="header__element"><a class="header__ref" href="#">Кейсы</a></li>
+            <li class="header__element"><a class="header__ref" href="#">О компании</a></li>
+            <li class="header__element"><a class="header__ref" href="#">Блог</a></li>
+            <li class="header__element"><a class="header__ref" href="#">Контакты</a></li>
+          </ul><a class="header__cooperation">Обсудить проект</a>
+        </div>
         <div class="header__menu"><a class="header__button" href="#">
             <div class="header__line"></div>
             <div class="header__line"></div></a></div>
@@ -37,8 +57,8 @@
     <div class="content">
       <section class="welcom">
         <div class="welcom__wrap">
-          <div class="welcom__head">
-            <div class="container">
+          <div class="container">
+            <div class="welcom__head">
               <div class="welcom__info">
                 <h1 class="welcom__title">Добро пожаловать в Riverstart!</h1>
                 <p class="welcom__text">10 лет мы растем и получаем удовольствие от сферы digital. Присоединяйся!</p>
@@ -51,7 +71,14 @@
             </div>
           </div>
           <div class="welcom__bottom">
-            <picture class="welcom__image"><img class="lazyload welcom__bg" src="assets/img/welcom__team.png" alt="team"></picture>
+            <picture class="welcom__image">
+              <source class="welcom__bg" srcset="assets/img/welcom__team1920.png" data-srcset="assets/img/welcom__team1920.png" media="(min-width: 1920px)" type="image/png">
+              <source class="welcom__bg" srcset="assets/img/welcom__team.png" data-srcset="assets/img/welcom__team.png" media="(max-width: 1919px)" type="image/png"><img class="lazyload welcom__bg" src="assets/img/welcom__team.png" alt="team">
+            </picture>
+            <div class="welcom__photo">
+              <div class="welcom__first"><img src="assets/img/welcom__team--photo1.png" alt="welcom__photo--photo1"></div>
+              <div class="welcom__second"><img src="assets/img/welcom__team--photo2.png" alt="welcom__photo--photo2"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -168,7 +195,11 @@
             </div>
           </div>
           <div class="privilege__bottom">
-            <picture class="privilege__image"><img class="lazyload privilege__bg" src="assets/img/privilege__img.png" alt="privilege"></picture>
+            <picture class="privilege__image">
+              <source class="privilege__bg" srcset="assets/img/privilege__img1920.png" data-srcset="assets/img/privilege__img1920.png" media="(min-width: 1920px)" type="image/png">
+              <source class="privilege__bg" srcset="assets/img/privilege__img.png" data-srcset="assets/img/privilege__img.png" media="(max-width: 1919px)" type="image/png"><img class="lazyload privilege__bg" src="assets/img/privilege__img.png" alt="privilege">
+            </picture>
+            <div class="privilege__photo"><img src="assets/img/privilege__img--photo.png" alt="privilege"></div>
           </div>
         </div>
       </section>
@@ -270,9 +301,12 @@
             <div class="join__body">
               <div class="join__desc">
                 Мы всегда в поиске новых людей в команду. Дизайнеры, разработчики, менеджеры итестировщики. Смотри наши вакансии, возможно сейчас мы ищем именно тебя.</div><a class="join__button" href="#">
-                <p class="join__text">
-                   Посмотреть <br>12 открытых вакансий</p><img class="lazyload join__arrow" src="assets/img/join__arrow.svg" alt="join__arrow"></a>
-              <div class="join__gradient"></div><img class="join__bg" src="assets/img/join__team.png" alt="join__team">
+                <p class="join__text"> <span>Посмотреть </span><span>12 открытых вакансий</span></p><img class="lazyload join__arrow" src="assets/img/join__arrow.svg" alt="join__arrow"></a>
+              <div class="join__gradient"></div>
+              <picture class="join__bg">
+                <source srcset="assets/img/join__team1920.png" data-srcset="assets/img/join__team1920.png" media="(min-width: 1920px)" type="image/png">
+                <source srcset="assets/img/join__team.png" data-srcset="assets/img/join__team.png" media="(max-width: 1919px)" type="image/png"><img class="lazyload" src="assets/img/join__team.png" alt="join__team">
+              </picture>
             </div>
           </div>
         </div>
@@ -284,11 +318,14 @@
               <h2 class="pleasure__title">Получай удовольствие от работы</h2>
             </div>
           </div>
-          <div class="pleasure_body">
-            <div class="container">
+          <div class="container">
+            <div class="pleasure__body">
               <div class="pleasure__card">
                 <div class="dignity">
-                  <picture class="dignity__img"><img class="lazyload dignity__image" src="assets/img/dignity__img1.png" alt="dignity__img"></picture>
+                  <picture class="dignity__img">
+                    <source srcset="assets/img/dignity__img1-1920.png" data-srcset="assets/img/dignity__img1-1920.png" media="(min-width: 1920px)" type="image/png">
+                    <source srcset="assets/img/dignity__img1.png" data-srcset="assets/img/dignity__img1.png" media="(max-width: 1919px)" type="image/png"><img class="lazyload dignity__image" src="assets/img/dignity__img1.png" alt="dignity__img">
+                  </picture>
                   <div class="dignity__info">
                     <h3 class="dignity__title">Ты влияешь на компанию</h3>
                     <p class="dignity__desc">
@@ -298,7 +335,10 @@
               </div>
               <div class="pleasure__card">
                 <div class="dignity">
-                  <picture class="dignity__img"><img class="lazyload dignity__image" src="assets/img/dignity__img2.png" alt="dignity__img"></picture>
+                  <picture class="dignity__img">
+                    <source srcset="assets/img/dignity__img2-1920.png" data-srcset="assets/img/dignity__img2-1920.png" media="(min-width: 1920px)" type="image/png">
+                    <source srcset="assets/img/dignity__img2.png" data-srcset="assets/img/dignity__img2.png" media="(max-width: 1919px)" type="image/png"><img class="lazyload dignity__image" src="assets/img/dignity__img2.png" alt="dignity__img">
+                  </picture>
                   <div class="dignity__info">
                     <h3 class="dignity__title">Свободное общение без боссов</h3>
                     <p class="dignity__desc">
@@ -308,7 +348,10 @@
               </div>
               <div class="pleasure__card">
                 <div class="dignity">
-                  <picture class="dignity__img"><img class="lazyload dignity__image" src="assets/img/dignity__img3.png" alt="dignity__img"></picture>
+                  <picture class="dignity__img">
+                    <source srcset="assets/img/dignity__img3-1920.png" data-srcset="assets/img/dignity__img3-1920.png" media="(min-width: 1920px)" type="image/png">
+                    <source srcset="assets/img/dignity__img3.png" data-srcset="assets/img/dignity__img3.png" media="(max-width: 1919px)" type="image/png"><img class="lazyload dignity__image" src="assets/img/dignity__img3.png" alt="dignity__img">
+                  </picture>
                   <div class="dignity__info">
                     <h3 class="dignity__title">График, удобный тебе</h3>
                     <p class="dignity__desc">По-настоящему плавающий график, помогающий работать</p>
@@ -318,7 +361,7 @@
             </div>
           </div>
           <div class="pleasure__bottom">
-            <div class="swiper">
+            <div class="swiper pleasure__swiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide"> 
                   <div class="conditions"><img class="lazyload conditions__img" src="assets/img/conditions__img1.png" alt="conditions__img1">
@@ -326,39 +369,63 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="conditions"><img src="assets/img/conditions__img2.png" alt="conditions__img2">
+                  <div class="conditions"><img class="lazyload conditions__img" src="assets/img/conditions__img2.png" alt="conditions__img2">
                     <p class="conditions__text">Комфортный зеленый офис в самом красивом месте города</p>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="conditions"><img src="assets/img/conditions__img3.png" alt="conditions__img3">
+                  <div class="conditions"><img class="lazyload conditions__img" src="assets/img/conditions__img3.png" alt="conditions__img3">
                     <p class="conditions__text">Возможность обучаться за счет компании</p>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="conditions"><img src="assets/img/conditions__img4.png" alt="conditions__img4">
+                  <div class="conditions"><img class="lazyload conditions__img" src="assets/img/conditions__img4.png" alt="conditions__img4">
                     <p class="conditions__text">Программы стажировок для новых специалистов</p>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="conditions"><img src="assets/img/conditions__img5.png" alt="conditions__img5">
+                  <div class="conditions"><img class="lazyload conditions__img" src="assets/img/conditions__img5.png" alt="conditions__img5">
                     <p class="conditions__text">Встречи внутри коллектива для обмена опытом</p>
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <div class="conditions"><img src="assets/img/conditions__img6.png" alt="conditions__img6">
+                  <div class="conditions"><img class="lazyload conditions__img" src="assets/img/conditions__img6.png" alt="conditions__img6">
                     <p class="conditions__text">Помощь в релокации</p>
                   </div>
                 </div>
               </div>
               <div class="swiper-pagination"></div>
             </div>
+            <div class="pleasure__plate">
+              <div class="conditions"><img class="lazyload conditions__img" src="assets/img/conditions__img1.png" alt="conditions__img1">
+                <p class="conditions__text">Участие в отраслевых конференциях и митапах за счет компании</p>
+              </div>
+              <div class="conditions"><img class="lazyload conditions__img" src="assets/img/conditions__img2.png" alt="conditions__img2">
+                <p class="conditions__text">Комфортный зеленый офис в самом красивом месте города</p>
+              </div>
+              <div class="conditions"><img class="lazyload conditions__img" src="assets/img/conditions__img3.png" alt="conditions__img3">
+                <p class="conditions__text">Возможность обучаться за счет компании</p>
+              </div>
+              <div class="conditions"><img class="lazyload conditions__img" src="assets/img/conditions__img4.png" alt="conditions__img4">
+                <p class="conditions__text">Программы стажировок для новых специалистов</p>
+              </div>
+              <div class="conditions"><img class="lazyload conditions__img" src="assets/img/conditions__img5.png" alt="conditions__img5">
+                <p class="conditions__text">Встречи внутри коллектива для обмена опытом</p>
+              </div>
+              <div class="conditions"><img class="lazyload conditions__img" src="assets/img/conditions__img6.png" alt="conditions__img6">
+                <p class="conditions__text">Помощь в релокации</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="question">
         <div class="question__wrap">
-          <div class="question__head"><img class="question__bg lazyload" src="assets/img/question__img.png" alt="question__img">
+          <div class="question__left">
+            <picture class="question__bg">
+              <source srcset="assets/img/question__bg1920.png" data-srcset="assets/img/question__bg1920.png" media="(min-width: 1920px)" type="image/png">
+              <source srcset="assets/img/question__img.png" data-srcset="assets/img/question__img.png" media="(max-width: 1919px)" type="image/png"><img class="lazyload privilege__bg" src="assets/img/privilege__img.png" alt="privilege">
+            </picture>
             <div class="question__info">
               <div class="container">
                 <h2 class="question__title">Задай свой вопрос о работе</h2>
@@ -377,13 +444,62 @@
               </div>
             </div>
           </div>
+          <div class="question__right">
+            <form class="question__form">
+              <h3 class="question__subtitle">Заполнить форму</h3>
+              <div class="question__inputs">
+                <div class="question__name input js-label">
+                  <input type="text" required>
+                  <label>Имя</label>
+                </div>
+                <div class="question__tel input js-label">
+                  <input type="tel" required>
+                  <label>Телефон</label>
+                </div>
+                <div class="question__sity input js-label">
+                  <input type="text" required>
+                  <label>Город</label>
+                </div>
+                <div class="question__email input js-label">
+                  <input type="email" required>
+                  <label>E-mail</label>
+                </div>
+              </div>
+              <div class="question__question input js-label">
+                <textarea></textarea>
+                <label>Твой вопрос</label>
+              </div>
+              <label class="question__add">
+                <input type="file" name="file1"><img src="assets/img/question__add.svg" alt="question__add">
+                <p>Прикрепить резюме и портфолио</p>
+              </label>
+              <div class="question__submit">       
+                <input type="submit">
+              </div>
+              <div class="question__alert">
+                <p>Нажав на кнопку, вы соглашаетесь с политикой</p><a href="#">обработки персональных данных</a>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
     </div>
     <footer class="footer">
-      <div class="container"><a class="footer__link" href="#">Политика конфиденциальности</a>
-        <div class="footer__info"> <img class="footer__img" src="assets/img/footer__union.svg" alt="footer__union">
-          <p class="footer__text">2021 © Riverstart Digital. Все права защищены</p>
+      <div class="container">
+        <div class="footer__wrap">
+          <div class="footer__left"><a class="footer__link" href="#">Политика конфиденциальности</a>
+            <div class="footer__info"> <img class="footer__img" src="assets/img/footer__union.svg" alt="footer__union">
+              <p class="footer__text">2021 © Riverstart Digital. Все права защищены</p>
+            </div>
+          </div>
+          <div class="footer__right">       
+            <ul class="footer__list">
+              <li class="footer__item"><a class="footer__social" href="#"><i class="icon-facebook"></i></a></li>
+              <li class="footer__item"><a class="footer__social" href="#"><i class="icon-twitter"></i></a></li>
+              <li class="footer__item"><a class="footer__social" href="#"><i class="icon-instagram"></i></a></li>
+              <li class="footer__item"><a class="footer__social" href="#"><i class="icon-vk"></i></a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </footer>
